@@ -1,0 +1,13 @@
+| 算法名称 | 算法简介 | 代码链接 |
+| --- | --- | --- |
+| Hadamard门（H门） | Hadamard门经常用于将基态转化为叠加态。基态|\text{0}\rangle= \begin{bmatrix} 1 \\ 0 \end{bmatrix}，|\text{1}\rangle= \begin{bmatrix} 0 \\ 1 \end{bmatrix} | https://deepquantum.turingq.com/2024/07/10/%e9%87%8f%e5%ad%90%e8%ae%a1%e7%ae%97%e5%9f%ba%e7%a1%80/ |
+| 泡利门（Pauli gates） | 泡利门（Pauli gates）是量子计算中的基本量子门，它们以物理学家沃尔夫冈·泡利（Wolfgang Pauli）的名字命名。泡利门包括三个单量子比特门：Pauli-X门、Pauli-Y门和 Pauli-Z门。每个泡利门对应一个 2×2 的厄米矩阵（Hermitian matrix）。下面我会详细介绍这三个泡利门。 | https://deepquantum.turingq.com/2024/07/10/%e9%87%8f%e5%ad%90%e8%ae%a1%e7%ae%97%e5%9f%ba%e7%a1%80/ |
+| 旋转门 | 量子计算中的任意角度旋转门是一类重要的量子门，它允许我们在量子比特上以任意角度旋转。这些门通常用于量子算法中的各种操作，如量子相位估计、量子傅里叶变换等。 | https://deepquantum.turingq.com/2024/07/10/%e9%87%8f%e5%ad%90%e8%ae%a1%e7%ae%97%e5%9f%ba%e7%a1%80/ |
+| S门 | S门，也被称为相位门（Phase Gate），是量子计算中的一个重要的单量子比特门。它主要用来改变量子比特的相位，而不会改变其概率分布。S门在量子算法中扮演着关键角色，尤其是在那些需要进行相位编码的算法中。 | https://deepquantum.turingq.com/2024/07/10/%e9%87%8f%e5%ad%90%e8%ae%a1%e7%ae%97%e5%9f%ba%e7%a1%80/ |
+| T门 | T门（T-gate）也称为\frac{\pi}{8}门或sqrt(S)门是量子计算中使用的一种单量子比特门，主要用于改变量子比特的相位。 | https://deepquantum.turingq.com/2024/07/10/%e9%87%8f%e5%ad%90%e8%ae%a1%e7%ae%97%e5%9f%ba%e7%a1%80/ |
+| CNOT门 | CNOT门（Controlled-NOT门）是量子计算中最基本的两量子比特门之一。CNOT门有两个量子比特输入，一个称为控制量子比特（Control），另一个称为目标量子比特（Target）。 | https://deepquantum.turingq.com/2024/07/10/%e9%87%8f%e5%ad%90%e8%ae%a1%e7%ae%97%e5%9f%ba%e7%a1%80/ |
+| 受控门 | Deepquantum允许使用者构建受控门，即在控制比特为|\text{1}\rangle态的情况下对目标比特进行某种门操作，请注意在真实量子线路中这种操作只被允许在相邻量子比特间进行。 | https://deepquantum.turingq.com/2024/07/10/%e9%87%8f%e5%ad%90%e8%ae%a1%e7%ae%97%e5%9f%ba%e7%a1%80/ |
+| SWAP门 | SWAP门可以将两个量子比特的状态进行交换，而不影响其他量子比特。如果有两个量子比特A和B，它们可以处于任意的量子态，SWAP门将它们的状态互换。 | https://deepquantum.turingq.com/2024/07/10/%e9%87%8f%e5%ad%90%e8%ae%a1%e7%ae%97%e5%9f%ba%e7%a1%80/ |
+| 量子门的普适性（universality） | 在对具体的多量子门进行介绍之前，我们首先介绍量子门的普适性概念，这是构建任意多量子门的理论基础。量子门的普适性（universality）是指量子计算机能够通过有限集合中的量子门的组合实现任意量子门。量子门的普适性意味着任何量子计算任务都可以分解为一系列基本量子门的操作。因此，设计一种量子计算机，只需要确保它能够实现这些基本量子门就可以执行任意量子算法。这使得量子计算机的构建更加实际和可行，同时也提供了一个通用的框架来分析和设计量子算法。 | https://deepquantum.turingq.com/2024/07/10/%e9%87%8f%e5%ad%90%e8%ae%a1%e7%ae%97%e5%9f%ba%e7%a1%80/ |
+| Toffoli门 | Toffoli门，也称为CCNOT门，是一种在量子计算中使用的三量子比特门。它是量子计算中最基本的多量子比特门之一，经常用于构造更复杂的量子算法。Toffoli门是一个条件性门，它接受三个量子比特作为输入。如果前两个量子比特都处于状态|1\rangle，则Toffoli门将第三个量子比特翻转，即从|0\rangle变为|1\rangle，或从|1\rangle变为|0\rangle。Toffoli门在量子算法中扮演着重要角色，例如在量子傅里叶变换算法和用于大数质因数分解的Shor算法中。 | https://deepquantum.turingq.com/2024/07/10/%e9%87%8f%e5%ad%90%e8%ae%a1%e7%ae%97%e5%9f%ba%e7%a1%80/ |
+| Fredkin门 | Fredkin门，也称为控制交换门或C_\text{SWAP}门，是一种三量子比特的量子门，它在量子计算中具有重要的作用。与Toffoli门类似，Fredkin门也是一种条件性操作的门，但其作用是交换两个量子比特的状态，而不是翻转它们。 | https://deepquantum.turingq.com/2024/07/10/%e9%87%8f%e5%ad%90%e8%ae%a1%e7%ae%97%e5%9f%ba%e7%a1%80/ |
